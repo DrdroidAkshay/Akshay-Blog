@@ -1,0 +1,85 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="utf-8">
+<title>Akshay</title>
+	<link href="static/css/blogstyle.css" rel="stylesheet" type="text/css"/>
+
+	<link rel="stylesheet" type="text/css" href="static/css/aos.css">
+
+	<link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.0-beta2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-BmbxuPwQa2lc/FVzBcNJ7UAyJxM6wuqIj61tLrc4wSX0szH/Ev+nYRRuWlolflfl" crossorigin="anonymous">
+	<script src="http://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+    <script src="http://cdnjs.cloudflare.com/ajax/libs/tinymce/4.5.6/jquery.tinymce.min.js"></script>
+</head>
+
+<body>
+        <div id="headercontainer">
+		<div id="header">
+			<div id="Logo"><a>GYANIBABA</a></div>
+			<div id="menu">
+			<div class="menuitems"><a href="/">HOME</a></div>
+			<div class="menuitems" ><a href="/blog" id="active">BLOG</a></div>
+			<div class="menuitems"><a href="https://www.youtube.com/channel/UCtXiQQ9u2GAlO9y8HzFvrwg">YOUTUBE</a></div>
+			</div>
+		</div>
+		</div>
+        <div class="maincontainer">
+            <br>
+            <div class="" style="min-height:70vh;padding-bottom:30px">
+{% for blog in blogs %}
+<div class="cardcontainer " style="">
+<div class="row g-0 bg-light">
+  <div class="col-md-6 mb-md-0 p-md-4" style="height:200px;width:365px">
+    <img src="https://source.unsplash.com/250x100/?{{blog.title}},{{blog.title}}" class="w-100" alt="..." style="height:100%;width:100%">
+  </div>
+  <div class="col-md-6 p-4 ps-md-0" style="position:relative">
+    <h5 class="mt-0">{{blog.title}}</h5>
+    <p style="max-height:95px; overflow:hidden;">{{blog.short_desc|slice:200}}. . .</p>
+   <p class="read-more" style="position: absolute; bottom: 0; left: 0; width: 100%; margin: 0; padding-top: 80px; margin-bottom: 20px;
+   background-image: linear-gradient(to bottom, transparent, white);"><a href="/blogpost/{{blog.slug}}" class="button" style="text-decoration:none; font-weight:600; color: #005493">CONTINUE READING</a></p>
+  </div>
+</div>
+</div>
+{% endfor %}
+</div>
+
+            <nav aria-label="Page navigation example">
+  <ul class="pagination justify-content-center fixed-bottom position-relative" style="margin-bottom:80px">
+
+      {% if prev %}
+    <li class="page-item">
+      <a class="page-link" href="/blog?page={{prev}}" tabindex="-1">&laquo; Previous</a>
+    </li>
+      {% else %}
+    <li class="page-item disabled">
+      <a class="page-link" href="#" tabindex="-1">&laquo; Previous</a>
+     </li>
+      {% endif %}
+      {% for i in 1|ljust:no_of_pages %}
+    <li class="page-item"><a class="page-link" href="/blog?page={{forloop.counter}}">{{forloop.counter}}</a></li>
+      {% endfor %}
+    <li class="page-item">
+      {% if nxt %}
+    <li class="page-item">
+      <a class="page-link" href="/blog?page={{nxt}}">Next &raquo;</a>
+    </li>
+      {% else %}
+    <li class="page-item disabled">
+      <a class="page-link" href="#">Next &raquo;</a>
+    </li>
+      {% endif %}
+
+  </ul>
+</nav>
+        </div>
+
+<script src="static/js/aos.js" ></script>
+<script type="text/javascript">
+    AOS.init({
+    });
+</script>
+<footer class="text-center text-light bg-dark py-3 " style="font-size:15px">
+    <a> Copyright &copy; 2021 | All rights reserved</a>
+  </footer>
+</body>
+</html>

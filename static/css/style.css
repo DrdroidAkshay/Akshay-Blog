@@ -1,0 +1,572 @@
+@charset "utf-8";
+/* CSS Document */
+body{
+	margin: 0;
+	/*background: linear-gradient(to right, #5142f0, #32f4da);*/
+	/*background: linear-gradient(to left, #8e9eab, #eef2f3);*/
+background: #00416A;  /* fallback for old browsers */
+background: -webkit-linear-gradient(to bottom, #E4E5E6,#00416A, #00416A);  /* Chrome 10-25, Safari 5.1-6 */
+background: linear-gradient(to bottom, #E4E5E6,#00416A, #00416A); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+
+}
+#outerclass{
+
+	height: auto;
+
+}
+#header{
+	width: 1200px;
+	height: 50px;
+	margin: auto;
+	
+
+}
+#headercontainer{
+	margin-top: 50px;
+/*	position: sticky;
+	top: 0; */
+
+}
+#Logo{
+	width: 30%;
+	float: left;
+	color: white;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-size: 20px;
+	font-weight: 700;
+	padding: 15px;
+}
+#menu{
+	float: right;
+    margin-right:40px;
+}
+.menuitems{
+	display: inline-block;
+	padding: 10px;
+
+}
+.menuitems	a{
+	    text-decoration:none;
+	    color:grey;
+		font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+		font-size: 17px;
+		font-weight: 600;
+	}
+.menuitems a:hover{
+	color: #00416A;
+	transition: 0.6s;
+}
+#active{
+color:#00416A
+}
+#innerclass{
+	background: #FFFFFF;
+	width: 1200px;
+	height: 650px;
+	border-radius: 1%;
+	margin: auto;
+	margin-top: 20px;
+}
+#profileimage{
+	height: 650px;
+	width:580px;
+	padding: 25px;
+	float: left;
+}
+#profileimage img{
+	height: 100%;
+	width: 100%;
+}
+#about{
+	float: right;
+	height: auto;
+	width: 550px;
+	padding: 25px;
+	padding-top: 60px;
+}
+#hello{
+	font-size: 15px;
+	color: #777777;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: 500;
+	letter-spacing: 2px;
+
+}
+#name{
+	font-size: 50px;
+	color: black;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: 700;
+}
+#speciality{
+	font-size: 16px;
+	color: #2B2B2B;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: 500;
+}
+#details{
+	padding-top: 20px;
+	width: 380px;
+	font-size: 14px;
+	color: #555555;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: 400;
+	margin-bottom: 40px;
+
+
+}
+.mydetails{
+	width: auto;
+	height: 12px;
+}
+.icon{
+	float: left;
+	height: 20px;
+	width: 20px;
+}
+.icon img{
+	height: 100%;
+	width: 100%;
+}
+.icondetail{
+	float: left;
+	height: 20px;
+	width: auto;
+	margin-left: 15px;
+	
+}
+.icondetail a{
+	font-size: 14px;
+	color: #282828;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.facebook,.instagram,.twitter, .github, .linkedin{
+	float: left;
+	height: 40px;
+	width: 40px;
+	margin-right: 20px;
+	margin-top: 30px;
+}
+.facebook img,.instagram img,.twitter img, .github img, .linkedin img{
+	width: 100%;
+	height: 100%;
+}
+
+div.gallery {
+    margin: 40px 40px;
+    border: 3px solid #fff;
+	box-shadow: 1px 1px 10px 0px #ccc;
+    display:inline-block;
+	background: #fff;
+	overflow:hidden;
+}
+.projectpic{
+width: 350px;
+	height: 200px;
+}
+
+div.gallery:hover {
+    border: 3px groove rgba(0,0,0,0.32);
+	box-shadow: 1px 1px 40px 3px #ccc;
+}
+
+div.gallery img {
+    width: 100%;
+    height: 100%;
+	border: none;
+	margin: 0px;
+   
+}
+div.gallery a{
+	margin: 0px;
+}
+
+div.desc {
+    padding: 14px;
+    text-align: center;
+    background-color: #fff;
+	font-size: 15px;
+	color: #515151;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: 500;
+
+}
+#services{
+margin-top: 100px;
+padding-top:60px;
+height:380px;
+background:#eee
+}
+.servicesimage{
+height:40px;
+width:40px;
+margin-bottom:20px
+}
+.containerr{
+
+	text-align: center;
+	padding: 70px 20px;
+}
+#Gallery{
+	background:white;
+	background-attachment: fixed;
+	background-size:cover;
+	padding-bottom: 70px;
+	color black
+}
+.img-shadow{
+	border-radius: 50%;
+}
+.left-image{
+	display: inline-block;
+	width: 40%;
+
+}
+.wrap-text{
+	display: inline-block;
+	padding: 0px 20px;
+	width: 55%;
+	font-size: 24px;
+}
+h1{
+	font-size: 30px;
+	color: #515151;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: 500;
+}
+#Gallery h1{
+font-size: 30px;
+}
+#skills{
+    width: 100%;
+	height: 400px;
+	padding-top: 70px;
+}
+
+#skills h1{
+	text-align: center;
+	font-size: 30px;
+	color:white
+}
+
+.card-body{
+background:#eee;
+}
+
+#skills p{
+color:white
+}
+
+.total{
+background:white;
+width:610px;
+height:8px;
+overflow:hidden
+}
+
+#html{
+background:black;
+width:530px;
+height:8px
+}
+
+#python{
+background:black;
+width:500px;
+height:8px
+}
+
+#django{
+background:black;
+width:400px;
+height:8px
+}
+
+#android{
+background:black;
+width:450px;
+height:8px
+}
+
+.contactinfo{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-decoration: none;
+  overflow: visible;
+  padding-bottom:70px;
+}
+.contactinfo .items{
+  width: calc(33% - 20px);
+  height: 160px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  transition:  .3s linear;
+  text-decoration: none;
+}
+.contactinfo .items:hover{
+  color: white;
+  border: 2px solid white;
+  /* transform: translateY(-10px); */
+  transform: scale(1.1);
+  transition: all 5.9s ease;
+
+}
+.contactinfo .items:hover a{
+  text-decoration: none;
+  color: white;
+}
+.contactinfo .items:hover i{
+  color: white;
+}
+.maptext{
+color:grey;
+transition: 0.6s;
+}
+.reviewtext{
+    width:50%;
+    min-height:80px;
+}
+
+ @media only screen and (max-width: 900px) {
+ #header{
+	width: 100%;
+
+}
+#headercontainer{
+	margin-top: 0px;
+	background:black;
+}
+.menuitems	a{
+	    text-decoration:none;
+	    color:grey;
+		font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+		font-size: 17px;
+		font-weight: 500;
+	}
+.menuitems a:hover{
+	color: white;
+	transition: 0.6s;
+}
+#active{
+color:white
+}
+#innerclass{
+	background: #FFFFFF;
+	width: 100%;
+	height:auto;
+	border-radius: 0%;
+	margin: auto;
+	padding-bottom:70px;
+}
+#profileimage{
+	height: auto;
+	width:95%;
+	padding: 25px;
+	float: none;
+	margin:auto;
+}
+#profileimage img{
+	height: 100%;
+	width: 100%;
+}
+#about{
+    float:none;
+	height: auto;
+	width: 100%;
+	padding: 35px;
+	padding-top: 5px;
+}
+#hello{
+	font-size: 12px;
+	color: #777777;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: 500;
+	letter-spacing: 1px;
+
+}
+#name{
+	font-size: 20px;
+	color: black;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: 700;
+}
+#speciality{
+	font-size: 12px;
+	color: #2B2B2B;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: 500;
+}
+#details{
+	padding-top: 20px;
+	width: 100%;
+	font-size: 14px;
+	color: #555555;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: 400;
+	margin-bottom: 20px;
+
+
+}
+.mydetails{
+	width: auto;
+	height: 2px;
+}
+.icon{
+	float: left;
+	height: 12px;
+	width: 12px;
+}
+.icon img{
+	height: 100%;
+	width: 100%;
+}
+.icondetail{
+	float: left;
+	height: 12px;
+	width: auto;
+	margin-left: 15px;
+
+}
+.icondetail a{
+	font-size: 12px;
+	color: #282828;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: 600;
+	letter-spacing: 1px;
+}
+.socialmedia{
+width:100%}
+.facebook,.instagram,.twitter, .github, .linkedin{
+	float: left;
+	height: 30px;
+	width: 30px;
+	margin-right: 16px;
+	margin-top: 30px;
+}
+.facebook img,.instagram img,.twitter img, .github img, .linkedin img{
+	width: 100%;
+	height: 100%;
+}
+#services{
+margin-top: 0px;
+padding-top:0px;
+height:auto;
+padding-bottom:40px;
+background:#eee;
+overflow:hidden
+}
+.servicesimage{
+height:30px;
+width:30px;
+margin-bottom:20px
+}
+#services h5{
+font-size:15px;
+}
+#services p{
+font-size:12px;
+}
+div.gallery {
+    width:70%;
+    height:auto;
+    margin:50px 0px 0px 0px;
+}
+.projectpic{
+width: 100%;
+height: auto;
+}
+.projectpic img{
+width:100%;
+height:100%;
+}
+div.desc {
+    padding: 2px;
+    text-align: center;
+    background-color: #fff;
+	font-size: 12px;
+	color: #515151;
+	font-family: Segoe, "Segoe UI", "DejaVu Sans", "Trebuchet MS", Verdana, "sans-serif";
+	font-weight: 500;
+
+}
+
+#skills{
+    width: 100%;
+	height: 500px;
+	padding-top: 40px;
+}
+
+.total{
+background:white;
+width:100%;
+height:8px;
+overflow:hidden
+}
+
+#html{
+background:black;
+width:85%;
+height:8px
+}
+
+#python{
+background:black;
+width:80%;
+height:8px
+}
+
+#django{
+background:black;
+width:65%;
+height:8px
+}
+
+#android{
+background:black;
+width:70%;
+height:8px
+}
+.contactinfo{
+  justify-content: space-between;
+  flex-wrap: wrap;
+  text-decoration: none;
+  overflow: visible;
+  padding-bottom:0px;
+}
+.contactinfo .items{
+  width: calc(100% - 30px);
+  height: 160px;
+  background-color: black;
+  color: white;
+  text-align: center;
+  border-radius: 4px;
+  transition:  .3s linear;
+  text-decoration: none;
+  margin:auto;
+  margin-bottom:20px
+}
+.contactinfo .items:hover{
+  color: white;
+  border: 2px solid white;
+  /* transform: translateY(-10px); */
+  transform: scale(1.1);
+  transition: all 5.9s ease;
+
+}
+.contactinfo .items:hover a{
+  text-decoration: none;
+  color: white;
+}
+.contactinfo .items:hover i{
+  color: white;
+}
+
+ }
+
+
+
